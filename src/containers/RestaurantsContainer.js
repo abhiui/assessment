@@ -10,8 +10,14 @@ class RestaurantsContainer extends React.Component {
         }
     }
     async componentDidMount() {
+        
+        // Un commentt the below line if CORS issue is resolved.
+
+        //const data = await getRestaurantts('Alpharetta', 'Ice Creame');
+
+        // Comment this line if API issue is resolved
         const data = restaurantsList;
-        console.log(data);
+
         this.setState({
             restaurants: data.businesses
         });
